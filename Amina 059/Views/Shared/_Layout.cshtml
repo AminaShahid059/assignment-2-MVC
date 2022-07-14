@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝓗𝓲ج𝓪𝓫 Store</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="~/images/my logo.jpg" alt="Logo">
+        </div>
+       
+        <ul>
+            <li class="item"><a asp-action="index" asp-controller="Home">Home</a></li>
+            <li class="item"><a href="#services-container">Collection</a></li>
+            <li class="item"><a href="#client-section">New Arrivals</a></li>
+            <li class="item"><a asp-action="about" asp-controller="Home">About Us</a></li>
+            <li class="item"><a asp-action="contactus" asp-controller="Home">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.OnlineHijabStore.com. Thanks for visiting us!
+        </div>
+    </footer>
+</body>
+</html>

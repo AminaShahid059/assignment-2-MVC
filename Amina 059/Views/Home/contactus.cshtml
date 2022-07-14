@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+ }
+ <head>
+     <link rel="stylesheet" href="~/css/StyleContact.css">
+ </head>
+<body>
+     <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <div class="topic">Address</div>
+          <div class="text-one">Pakistan</div>
+          <div class="text-two">Sialkot Punjab</div>
+        </div>
+        <div class="phone details">
+          <div class="topic">Phone</div>
+          <div class="text-one">+92Xxxxxxxxxx</div>
+          <div class="text-two">+92Xxxxxxxxxx</div>
+        </div>
+        <div class="email details">
+          <div class="topic">Email</div>
+          <div class="text-one">19101001-059@uskt.edu.pk</div>
+          <div class="text-two">aminashahid059@gmail.com</div>
+        </div>
+      </div>
+  <form method="post" asp-action="form" asp-controller="Home">      
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT"/>
+    <p>@ViewBag.message</p>
+  </form>
+
+</body>
