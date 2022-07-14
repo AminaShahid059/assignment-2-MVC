@@ -19,6 +19,7 @@ namespace Amina_059.Controllers
         public IActionResult Index()
         {
             return View();
+
         }
 
         public IActionResult Privacy()
